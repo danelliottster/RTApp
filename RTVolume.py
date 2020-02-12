@@ -50,7 +50,9 @@ class RTVolume:
         # load binary data
         # 
         f = gzip.open(file_path_data,"rb")
-        self.data = np.array(struct.unpack('f'*self.array_sz[0]*self.array_sz[1]*self.array_sz[2],f.read())).reshape((self.array_sz[2],self.array_sz[1],self.array_sz[0]))
+        # self.data = np.array(struct.unpack('f'*self.array_sz[0]*self.array_sz[1]*self.array_sz[2],f.read())).reshape((self.array_sz[2],self.array_sz[1],self.array_sz[0]))
+        self.data = np.array(struct.unpack('f'*self.array_sz[0]*self.array_sz[1]*self.array_sz[2],f.read())).reshape((self.array_sz[0],self.array_sz[1],self.array_sz[2]))
+        # self.data = np.swapaxes(self.data,0,2)
         f.close()
 
 
