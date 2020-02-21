@@ -8,7 +8,7 @@ matplotlib.use("Qt5Agg")
 import matplotlib.pyplot as plt
 
 DV = CTdata();
-# DV.load_from_Segana("e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/iso_image_0_dose.params" , "e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/iso_image_0_dose.raw.gz")
-DV.load_from_Segana("e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/rtdose.params" , "e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/rtdose.raw.gz")
+DV.load_from_Segana("e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/debug_register_target_after_normalization.params" , "e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/debug_register_target_after_normalization.raw.gz")
+# DV.load_from_Segana("e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/rtdose.params" , "e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output/rtdose.raw.gz")
 
 fig,slider = RTApp_tools.visualize.view_volume(DV,vmin=np.min(DV.data),vmax=np.max(DV.data))

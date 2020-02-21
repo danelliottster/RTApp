@@ -10,11 +10,14 @@ import matplotlib.pyplot as plt
 do_overlay = True
 W_max = 5.0
 arrow_spacing = 4
-frac_num = 5
-output_path = "e:/SegAna/data/1.2.840.113619.2.358.3.430707922.615.1565930670.462/output"
+frac_num = 0
+output_path = "e:/SegAnaData/data/1.2.840.113704.1.111.5268.1496951889.14/output"
 U_path = output_path + "/iso_image_"+str(frac_num)+"_u_dvf"
 V_path = output_path + "/iso_image_"+str(frac_num)+"_v_dvf"
 W_path = output_path + "/iso_image_"+str(frac_num)+"_w_dvf"
+# U_path = output_path + "/iso_image_"+str(frac_num)+"_cb2kv_u_dvf"
+# V_path = output_path + "/iso_image_"+str(frac_num)+"_cb2kv_v_dvf"
+# W_path = output_path + "/iso_image_"+str(frac_num)+"_cb2kv_w_dvf"
 source_path = output_path+"/iso_sim"
 target_path = output_path+"/iso_image_"+str(frac_num)+"_aligned"
 
