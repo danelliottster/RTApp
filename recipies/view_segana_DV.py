@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 
 DV = CTdata();
 
-DV.load_from_Segana("e:/SegAnaData/data/1.2.246.352.221.477049225889020498914422815209278789030/output/TRACE_pre_isotropic_post_maskiso_sim.params" , "e:/SegAnaData/data/1.2.246.352.221.477049225889020498914422815209278789030/output/TRACE_pre_isotropic_post_maskiso_sim.raw.gz")
+data_path = "e:/SegAnaData/data/2.16.840.1.114362.1.11785856.22499700301.500187548.274.9110/output/iso_image_0_aligned"
+
+DV.load_from_Segana(data_path+".params" , data_path+".raw.gz")
 
 fig,slider = RTApp_tools.visualize.view_volume(DV,vmin=np.min(DV.data),vmax=np.max(DV.data))

@@ -5,3 +5,4 @@ from RTVolumes import RTVolume , CTdata , Mask
 # from RTMask import Mask
 from align_tool import run_align_tool
 import dvh
+import affine_transf_mat
